@@ -232,6 +232,7 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
 
     boot_diagnostics {
         storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
+        enabled     = "true"
     }
 
     tags = {
@@ -402,6 +403,7 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
 
     boot_diagnostics {
         storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
+        enabled     = "true"
     }
 
     tags = {
